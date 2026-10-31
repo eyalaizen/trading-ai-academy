@@ -1,0 +1,35 @@
+/* EA Academy 4.1: stable responsive layout, visual hierarchy, cache-safe fixes */
+:root{--ea-bg:#080e1b;--ea-panel:#101a2c;--ea-line:#293550;--ea-text:#ecf1ff;--ea-teal:#26dbc4;--ea-purple:#a47cff}
+html,body{width:100%;max-width:100%;overflow-x:hidden;background:var(--ea-bg);color:var(--ea-text)}
+header{position:relative;display:grid!important;grid-template-columns:auto minmax(0,1fr) auto;align-items:center!important;gap:20px!important;min-height:82px!important;padding:12px clamp(14px,2vw,32px)!important;background:#0b1222!important;border-bottom:1px solid var(--ea-line)!important}
+header .brand{display:flex!important;gap:12px;align-items:center!important;min-width:0;font-size:unset!important;color:var(--ea-text)!important;direction:ltr!important}
+header .ea-mark{display:flex!important;flex-direction:column!important;align-items:center;line-height:.85;letter-spacing:-2px;transform:skewX(-8deg)}
+header .ea-mark strong{font-size:38px!important;line-height:1.05;color:#fff!important;font-weight:900}
+header .ea-mark strong span{color:var(--ea-teal)!important}
+header .ea-mark small{font-size:15px!important;letter-spacing:0!important;line-height:1.15;color:#fff!important}
+header .brand-sub{font-size:11px;color:#a2b3ce;white-space:nowrap}
+header nav{display:flex!important;align-items:center!important;justify-content:center!important;flex-wrap:nowrap!important;gap:3px!important;min-width:0;overflow-x:auto;scrollbar-width:thin}
+header nav button{flex-shrink:0;font-size:clamp(11px,.85vw,14px)!important;padding:11px 10px!important;background:transparent!important;border:1px solid transparent!important;border-radius:10px!important;color:#cad5ea!important}
+header nav button.active{background:linear-gradient(125deg,#432b7b,#153d5c)!important;border-color:#7a59d6!important;color:white!important}
+header .tag{font-size:11px!important;white-space:nowrap;justify-self:end}
+#lab .layout{display:grid!important;direction:ltr!important;grid-template-columns:minmax(185px,15%) minmax(0,1fr) minmax(235px,20%)!important;align-items:start;gap:12px!important;padding:14px!important;max-width:1920px;margin:0 auto;min-height:0!important}
+#lab .layout>.ea-left-rail{grid-column:1!important;grid-row:1!important;direction:rtl;min-width:0!important;max-width:100%;border-radius:15px!important;overflow:hidden}
+#lab .layout>.pro-chart{grid-column:2!important;grid-row:1!important;min-width:0!important;width:100%;max-width:100%;overflow:hidden!important;border:1px solid var(--ea-line)!important;border-radius:15px!important;padding:0!important}
+#lab .layout>.pro-dock{grid-column:3!important;grid-row:1!important;min-width:0!important;width:100%;max-width:100%;display:flex!important;flex-direction:column!important;gap:12px!important;direction:rtl}
+#lab .pro-dock>.sidebar,#lab .pro-dock>.lesson{width:100%;min-width:0;max-width:100%;border-radius:14px!important;overflow:hidden}
+#lab .ea-chart-top{padding:14px 18px!important;min-height:94px}
+#lab .ea-chart-top h1{font-size:21px!important}
+#lab .charthead,#lab .toolbar,#lab .quickframes,#lab .pro-mode-tabs{max-width:100%;min-width:0;overflow-x:auto}
+#lab .trading-chart-body,#lab .pro-local{min-width:0;max-width:100%}
+#lab canvas{max-width:100%;width:100%;display:block}
+#lab #chart{height:360px!important}
+#lab #rsi,#lab #macd{height:92px!important}
+#lab .ea-bottom-tiles{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+#lab .ea-bottom-card{min-width:0;overflow:hidden}
+#lab .ea-left-rail .ea-journey{padding:18px 12px}
+#lab .ea-left-rail .ea-rail-menu{padding:10px}
+#lab .ea-left-rail .ea-rail-menu button{padding:11px 9px}
+#lab .ea-left-rail .ea-ring{width:92px;height:92px}
+@media(max-width:1350px){header{grid-template-columns:auto minmax(0,1fr)!important}header .tag{display:none!important}header .brand-sub{display:none!important}#lab .layout{grid-template-columns:175px minmax(0,1fr) 225px!important;gap:9px!important;padding:9px!important}#lab .ea-chart-top p{display:none}}
+@media(max-width:1050px){header{display:flex!important;flex-wrap:wrap!important;justify-content:center!important}header nav{width:100%!important;order:2}#lab .layout{grid-template-columns:170px minmax(0,1fr)!important}#lab .layout>.pro-dock{grid-column:2!important;grid-row:2!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important}#lab .layout>.ea-left-rail{grid-row:1/span 2!important}#lab .layout>.pro-chart{grid-column:2!important}}
+@media(max-width:720px){header{gap:8px!important}header .brand{width:100%;justify-content:center}header nav{justify-content:flex-start!important}#lab .layout{display:flex!important;flex-direction:column!important;padding:8px!important}#lab .layout>.ea-left-rail,#lab .layout>.pro-chart,#lab .layout>.pro-dock{width:100%!important;max-width:100%!important}#lab .ea-left-rail .ea-journey{display:none}#lab .ea-rail-menu{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}#lab .layout>.pro-chart{order:1}#lab .layout>.ea-left-rail{order:0}#lab .layout>.pro-dock{order:2;display:flex!important}#lab .ea-bottom-tiles{grid-template-columns:1fr!important}#lab #chart{height:300px!important}#lab .ea-chart-top{flex-direction:column;align-items:stretch}}
