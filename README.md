@@ -1,11 +1,20 @@
-# Trading & AI Academy v2
+# Trading & AI Academy v2.2 — Pro Chart
 
-Static RTL Hebrew website for GitHub Pages. Upload `index.html`, `style.css`, `app.js` to repository root.
+אתר סטטי בעברית ל-GitHub Pages. העלו את ארבעת הקבצים **ישירות לשורש המאגר** (ולא תיקייה או ZIP): `index.html`, `style.css`, `app.js`, `README.md`.
 
-Features: technical analysis demo, global market scanner with **synthetic** prices, 18-week course outline, journal stored in localStorage, educational MA-crossover backtest using synthetic deterministic prices, AI research prompt builder and external source links.
+## מה השתנה
+- עיצוב כהה בהשראת ממשקי מסחר מקצועיים: סרגל ניווט, רשימת מעקב, גרף מרכזי, שיעור צדדי ופאנלים של RSI ו-MACD.
+- תיקון נפח המסחר: עמודות נפח מנורמלות לגובה אזור ייעודי ואינן מכסות את הנרות.
+- זום פנימה/החוצה ואיפוס זום (משנה מספר נרות גלויים).
+- בחירה מהירה של 1D / 1W / 1M עבור CSV של נתונים **יומיים**.
+- טעינת CSV מקומית נשמרה, יחד עם הסורק, השיעורים, היומן, הסימולטור, ה-Backtesting ומעבדת המחקר.
 
-No real-time market data, no live AI, no actual historical backtesting, no financial advice. Do not use demo prices for trading.
+## מגבלות
+- מחירי ברירת המחדל סינתטיים. נתוני CSV היסטוריים שהמשתמש מעלה אינם נשלחים לשרת, אינם מאומתים ואינם בזמן אמת.
+- אין חיבור אוטומטי לספק נתוני שוק; זה השלב הבא. אין להכניס API keys בקוד ציבורי.
+- 1D/1W/1M הם צבירות של נתונים יומיים. אין תמיכה בגרפי דקה/שעה לפני חיבור ספק ו-parser מתאים.
+- מעבדת AI היא כלי להכנת שאלות, לא חיבור פעיל למודל. ה-Backtesting הוא חינוכי.
+- לא המלצת השקעה.
 
-
-## גרסה 2.1 — נתוני אמת מקובץ CSV
-במעבדת הניתוח בחרו קובץ CSV הכולל כותרות `Date,Open,High,Low,Close,Volume`. תאריך בפורמט YYYY-MM-DD או YYYYMMDD. ייבוא נתונים מתבצע מקומית בדפדפן; הקובץ לא נשלח לשרת. אפשר לבחור D/W/M לצבירה של נתונים יומיים לשבועיים/חודשיים. אין להשתמש בקובצי intraday עם אותו parser: הנתונים נאספים לפי יום. הנתונים אינם נבדקים מול בורסה ואינם מתעדכנים אוטומטית. קבצים מוגבלים ל-8MB.
+## בדיקה
+`node --check app.js` עבר. לא התאפשרה בדיקת דפדפן אוטומטית בסביבת הבנייה; יש לבדוק ידנית לאחר פרסום.
