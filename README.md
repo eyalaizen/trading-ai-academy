@@ -1,18 +1,17 @@
-# Trading & AI Academy Pro v3.0
+EA Academy — v4.0 (GitHub Pages)
+================================
+Install: extract and upload ALL files at repository root, replacing same-named files. GitHub Pages main/(root) remains unchanged.
+Open: https://eyalaizen.github.io/trading-ai-academy/?version=40
 
-A structural redesign based on the supplied v2.3 ZIP. Upload all eight files to the repository root.
+What's new:
+- EA Academy logo, purple/teal dark theme, redesigned navigation.
+- Three-column analysis layout: left learning progress/navigation, central chart, right watchlist and lesson.
+- Compact action tiles for continuing learning, daily practice, journal.
+- Built-in Hebrew help modal covering candlesticks, MA20, Bollinger, RSI, MACD, support/resistance, backtesting, and market feed.
+- Preserves original v3 course, scanner, CSV import, local chart, TradingView external widget, backtesting, journal, and research files.
 
-## What changed
-- Trading terminal layout: large central chart, vertical drawing rail, watchlist and lesson dock on the right.
-- Switch between local interactive chart (synthetic or imported CSV) and the externally embedded TradingView chart.
-- Improved academy reading workspace; six lessons include extra detailed explanations, numerical examples, exercises and common pitfalls. Other lessons remain shorter templates and should not be represented as full expert lectures.
-- Existing journal, scanner, backtesting, research and CSV upload preserved.
-
-## Market-data disclosure
-- The external TradingView embed may be live or delayed depending on exchange, entitlements and widget availability.
-- The local chart is demo-only unless the user imports CSV.
-- The local scanner and backtesting are not live feeds.
-- No paid provider credentials or secret keys are embedded.
-
-## Deploy
-Upload index.html, style.css, app.js, academy.js, market.js, pro-v3.css, pro-v3.js and README.md to the root of your GitHub Pages repository. Visit ?version=30 after deployment.
+Limits:
+- Local chart and scanner use synthetic demo data unless you import a CSV into the chart.
+- TradingView embedded chart is external; exchange data may be delayed, and it is not integrated with the scanner, backtesting or journal.
+- No live AI model is connected. No fabricated trade-performance or progress figures; progress is read from browser storage.
+- 54 lesson slots exist, but not all contain expert-level full lessons.
