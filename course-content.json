@@ -1,5 +1,5 @@
 {
-  "version": "9.0",
+  "version": "10.0",
   "weeks": [
     "להכיר את עולם ההשקעות",
     "מחירים, נתונים ומקורות",
@@ -104,6 +104,18 @@
       "url": "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/resources/lecture-videos/",
       "kind": "וידאו אקדמי",
       "tip": "בחר Lecture בתחום הנלמד; התכנים באנגלית ועשויים להיות ארוכים משיעור אחד."
+    },
+    "fidelity": {
+      "name": "Fidelity — What Is Technical Analysis?",
+      "url": "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/what-is-technical-analysis",
+      "kind": "מדריך מקצועי — לא מחקר אקדמי",
+      "tip": "העמק בהסברי RSI, MACD, נפח ומושגי תמיכה והתנגדות. מדריך זה אינו הוכחה לרווחיות כלל מסחר."
+    },
+    "bollinger": {
+      "name": "John Bollinger — Bollinger Bands (אתר היוצר)",
+      "url": "https://www.bollingerbands.com/",
+      "kind": "הסבר המקור של מפתח האינדיקטור",
+      "tip": "קרא כיצד המפתח מסביר רצועות דינמיות ותנודתיות. זו פרשנות מקצועית של היוצר, לא ניסוי תשואות נפרד."
     }
   },
   "lessons": [
@@ -219,6 +231,7 @@
       "correct": 0,
       "explanation": "צבע הנר משווה פתיחה לסגירה של אותו נר בלבד.",
       "sources": [
+        "lo-paper",
         "cmt",
         "mit"
       ],
@@ -669,6 +682,7 @@
       "correct": 1,
       "explanation": "רמה גבוהה מעידה על התנהגות המחיר בחלון הנבחר, לא על ערך החברה או עתיד ודאי.",
       "sources": [
+        "fidelity",
         "cmt",
         "brock"
       ],
@@ -699,6 +713,7 @@
       "correct": 0,
       "explanation": "MACD מעל אפס משקף פער חיובי בין שני ממוצעים, בלי לומר מה יקרה בעתיד.",
       "sources": [
+        "fidelity",
         "cmt",
         "brock"
       ],
@@ -790,6 +805,7 @@
       "correct": 0,
       "explanation": "רוחב קטן משקף פיזור נמוך יותר של המחירים בחלון.",
       "sources": [
+        "bollinger",
         "cmt",
         "mit"
       ],
@@ -850,6 +866,7 @@
       "correct": 0,
       "explanation": "נפח מתאר כמות עסקאות, לא נטיית קונים נטו לבדה.",
       "sources": [
+        "fidelity",
         "cmt",
         "sec"
       ],

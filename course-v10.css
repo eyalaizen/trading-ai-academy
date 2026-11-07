@@ -1,0 +1,16 @@
+/* EA Academy 10 — Research and practice belong inside the learning text */
+.reading-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;border:1px solid #395175;border-radius:13px;background:linear-gradient(120deg,#192b48,#13333a);padding:19px 21px;margin:18px 0 25px}
+.reading-intro strong{font-size:17px}.reading-intro p{margin:5px 0 0;line-height:1.85!important;font-size:13px!important;color:#d0e2f5}.reading-time{font-size:12px;white-space:nowrap;padding:5px 9px;border:1px solid #368c85;border-radius:18px;color:#65ebdc;background:#113c3d}
+.reading-depth{margin:16px 0 22px;padding:14px 20px;background:#101d35;border:1px solid #2e4468;border-right:3px solid #a18bff;border-radius:12px}
+.reading-depth h3{color:#c8bcff;margin:2px 0 6px;font-size:15px}.reading-depth p{margin:4px 0 0}
+.research-inline{border-radius:14px;background:linear-gradient(135deg,#181f3c,#0d3039);border:1px solid #436287;padding:21px;margin:13px 0 25px;box-shadow:0 12px 30px #00000018}
+.evidence-tag{font-size:11px;font-weight:800;letter-spacing:.8px;color:#c9b6ff}.research-inline>p{margin:12px 0 14px;font-size:15px;line-height:2}
+.research-source{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 0;border-top:1px solid #3a4f66;border-bottom:1px solid #3a4f66}
+.research-source>div{min-width:0;display:flex;flex-direction:column;gap:3px}.research-source small{font-size:11px;color:#a8c9d3}.research-source a{font-weight:800;color:#7ddcf3;overflow-wrap:anywhere}
+.read-question{padding-top:14px}.read-question strong{color:#8ce8d7}.read-question p{margin:2px 0;font-size:13px!important;color:#bed0e7}
+.guided-intro{color:#b2c9da!important;font-size:13px!important}.guided-steps{counter-reset:step;list-style:none;padding:0;display:grid;gap:10px}
+.guided-steps li{background:#13253d;border:1px solid #314862;border-radius:11px;position:relative;padding:13px 52px 13px 14px;line-height:1.9;font-size:14px}
+.guided-steps li:before{counter-increment:step;content:counter(step);font-weight:800;color:#091925;background:#51dfc9;position:absolute;right:12px;top:14px;width:26px;height:26px;border-radius:8px;display:grid;place-items:center}
+.research-summary{padding:16px 19px;background:#122d3d;border-radius:13px;border:1px solid #317081}.research-summary strong{color:#8bebdc}.research-summary p{font-size:14px;line-height:1.9}
+.source-card.primary-source{border:1px solid #4aaea8;background:#12323e}.focus-prompt{padding-top:10px;border-top:1px dashed #365877;font-size:12px!important;color:#aee9e5!important}
+@media(max-width:750px){.reading-intro,.research-source{flex-direction:column}.reading-time{align-self:flex-start}.research-source .ghost{width:100%}}

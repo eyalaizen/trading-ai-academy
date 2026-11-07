@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090f1e"><title>EA Academy | הקורס המקצועי</title>
-<link rel="stylesheet" href="course-v9.css?v=9"></head>
+<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090f1e"><title>EA Academy | קורס המחקר והניתוח — גרסה 10</title>
+<link rel="stylesheet" href="course-v9.css?v=10"><link rel="stylesheet" href="course-v10.css?v=10"></head>
 <body>
 <header class="topbar">
   <div class="brand"><span class="brandlogo"><em>EA</em><small>ACADEMY</small></span><span class="brandwords">בית הספר למסחר והשקעות<small>לומדים לחשוב, למדוד ולחקור</small></span></div>
@@ -23,26 +23,36 @@
    <div class="lessonmeta"><span id="lessonType"></span><span>45 דקות</span><span>31.5 ד׳ למידה · 13.5 ד׳ יישום</span></div>
    <div class="intro-actions"><button id="prevLesson" class="ghost">← לשיעור הקודם</button><button id="nextLesson" class="ghost">לשיעור הבא →</button></div>
   </div>
-  <div class="modebar" role="tablist" aria-label="חלקי השיעור"><button data-tab="learn" role="tab" aria-selected="true" class="active">01 · הסברים ולמידה <span>70%</span></button><button data-tab="practice" role="tab" aria-selected="false">02 · תרגול ומבחן <span>30%</span></button><button data-tab="resources" role="tab" aria-selected="false">03 · מומחים ומקורות</button></div>
+  <div class="modebar" role="tablist" aria-label="חלקי השיעור"><button data-tab="learn" role="tab" aria-selected="true" class="active">01 · שיעור מעמיק <span>70%</span></button><button data-tab="practice" role="tab" aria-selected="false">02 · תרגול ומבחן <span>30%</span></button><button data-tab="resources" role="tab" aria-selected="false">03 · מומחים ומחקרים</button></div>
   <div class="two-panel">
    <article class="reader">
-    <section id="learnPanel" data-panel="learn"><div class="sectionstep">חלק א׳ · בונים הבנה</div><h2>מה נלמד בשיעור?</h2><ol id="objectives" class="objectives"></ol>
-    <div class="timeplan"><strong>חלוקת זמן מומלצת</strong><p>10 ד׳ קריאה · 15 ד׳ הרצאה/מקור מקצועי · 6.5 ד׳ מקרה בוחן · 13.5 ד׳ יישום</p></div>
-    <h2>1. הרעיון המרכזי</h2><p id="coreIdea" class="learning-copy"></p>
-    <h2>2. כך זה עובד בפועל</h2><p id="mechanism" class="learning-copy"></p>
-    <h2>3. דוגמה מחושבת</h2><div id="caseStudy" class="case-study"></div>
-    <h2>4. מה אפשר להסיק — ומה לא?</h2><div id="limitations" class="warning"></div>
-    <div class="checkpoint"><strong>לפני שממשיכים</strong><p>הסבר את הרעיון במילים שלך; איזה נתון חסר כדי להגיע למסקנה על השוק?</p></div>
-    <button id="toPractice" class="primary next">הבנתי — עבור ליישום ומבחן ←</button>
+    <section id="learnPanel" data-panel="learn">
+      <div class="sectionstep">חלק א׳ · לימוד עיוני, מחקר ודוגמה — 70%</div>
+      <div class="reading-intro"><div><strong>לא רק הגדרה — להבין למה וכיצד</strong><p>בכל שיעור נשלב את הרעיון, ההיגיון שמאחוריו, ממצאי מחקר או הסבר מקצועי, ואת האופן שבו מיישמים את התובנה. המקור הראשי נמצא כאן; חלונית המומחים מרחיבה עליו.</p></div><span class="reading-time">כ־31.5 דק׳</span></div>
+      <h2>מטרות השיעור</h2><ol id="objectives" class="objectives"></ol>
+      <div class="timeplan"><strong>איך ללמוד ב־45 דקות?</strong><p>12 ד׳ יסודות והסברים · 10 ד׳ מומחה או מחקר · 9.5 ד׳ דוגמה ויישום מודרך · 13.5 ד׳ תרגול ומבחן</p></div>
+      <h2>1. מתחילים מהרעיון — ולמה הוא חשוב?</h2><p id="coreIdea" class="learning-copy"></p>
+      <div class="reading-depth"><h3>מעמיקים את ההבנה</h3><p id="contextBridge" class="learning-copy"></p></div>
+      <h2>2. המנגנון: מה קורה בפועל?</h2><p id="mechanism" class="learning-copy"></p>
+      <h2>3. מה המומחים והמחקר מוסיפים?</h2>
+      <div class="research-inline"><span class="evidence-tag">קריאה ביקורתית</span><p id="expertResearch" class="learning-copy"></p>
+       <div class="research-source"><div><small>מקור מרכזי לשיעור</small><a id="expertLink" target="_blank" rel="noopener noreferrer" href="#">טוען מקור...</a><small id="expertSourceKind"></small></div><button id="expandResearch" type="button" class="ghost">כל המקורות והמחקרים ←</button></div>
+       <div class="read-question"><strong>שאלת קריאה ממוקדת</strong><p id="sourceFocus"></p></div>
+      </div>
+      <h2>4. איך משתמשים בזה? תהליך עבודה מודרך</h2><p class="guided-intro">אלה צעדי הדגמה להבנת השיטה, לא הוראות קנייה או מכירה.</p><ol id="guidedSteps" class="guided-steps"></ol>
+      <h2>5. דוגמה מעשית ומחושבת</h2><div id="caseStudy" class="case-study"></div>
+      <h2>6. מה אפשר להסיק — ומה לא?</h2><div id="limitations" class="warning"></div>
+      <div class="checkpoint"><strong>בדיקת הבנה לפני תרגול</strong><p id="lessonCheckpoint"></p></div>
+      <button id="toPractice" class="primary next">סיימתי ללמוד — המשך לתרגול ולמבחן ←</button>
     </section>
     <section id="practicePanel" data-panel="practice" hidden><div class="sectionstep">חלק ב׳ · יישום ובדיקת הבנה</div><h2>משימת מחקר מעשית</h2><div id="practiceTask" class="practice-task"></div>
     <div class="method"><h3>איך מגישים תשובה מקצועית?</h3><ol><li>תאר נתונים ומקור — לא רק תחושה.</li><li>הצג לפחות דוגמה אחת עם מספרים או תצפית שניתן לאמת.</li><li>הסבר מה יתמוך בהשערה וגם מה יפריך אותה.</li><li>סכם מסקנה מוגבלת ואחראית, לא ״אות בטוח״ למסחר.</li></ol></div>
     <h2>בחינה קצרה עם משוב מיידי</h2><div id="quizArea" class="quiz"></div><div id="quizFeedback" class="feedback" role="status" aria-live="polite"></div>
     <div class="completion"><button id="markComplete" class="primary">בדוק תנאי השלמה</button><small id="completionHint">להשלמה: תשובה נכונה בבוחן וסיכום קצר במחברת (80 תווים לפחות).</small></div>
     </section>
-    <section id="resourcesPanel" data-panel="resources" hidden><div class="sectionstep">חלק ג׳ · מקורות והעמקה</div><h2>לקרוא ולצפות בחומר המקורי</h2><p class="source-disclaimer">הקישורים מפנים למוסדות, הרצאות ומחקרים עצמאיים. המרצים אינם מלמדים מטעם EA Academy; לא כל מקור עוסק ישירות בנושא השיעור, וחלקם באנגלית.</p>
+    <section id="resourcesPanel" data-panel="resources" hidden><div class="sectionstep">חלק ג׳ · בחינת המקורות לעומק</div><h2>מה עומד מאחורי ההסבר בשיעור?</h2><div class="research-summary"><strong>השאלה המחקרית של השיעור</strong><p id="researchTabFocus"></p><p id="researchTabBridge"></p></div><h2>הרצאות, מחקרים ומדריכים ממוקדים</h2><p class="source-disclaimer">הקישורים מפנים למוסדות, הרצאות ומחקרים עצמאיים. המרצים אינם מלמדים מטעם EA Academy; לצד כל מקור מוסבר כיצד הוא קשור לשיעור. חלקם נותנים רקע תיאורטי ולא ראיה ישירה, וחלקם באנגלית.</p>
     <div id="sourceCards" class="source-grid"></div>
-    <h2>איך לקרוא מחקר בלי להתרשם רק מהכותרת?</h2><ol><li>מצא מי ערך אותו, מתי ואילו נתונים נכללו.</li><li>זהה מה בדיוק נמדד, ובאילו תקופות ומגבלות.</li><li>בדוק אם המסקנה עוסקת במידע סטטיסטי, בתשואה ברוטו או בתשואה נטו.</li><li>כתוב במחברת מה המחקר <strong>לא</strong> מוכיח.</li></ol>
+    <h2>איך ממשיכים ממקור למסקנה עצמאית?</h2><ol><li>מצא מי ערך אותו, מתי ואילו נתונים נכללו.</li><li>זהה מה בדיוק נמדד, ובאילו תקופות ומגבלות.</li><li>בדוק אם המסקנה עוסקת במידע סטטיסטי, בתשואה ברוטו או בתשואה נטו.</li><li>כתוב במחברת מה המחקר <strong>לא</strong> מוכיח.</li></ol>
     </section>
    </article>
    <aside class="study-desk"><div class="desk-head"><div><span class="overline">WORKSPACE</span><h2>שולחן הלמידה שלך</h2></div><button id="toggleLab" class="ghost" aria-expanded="false">הצג גרף</button></div>
@@ -60,5 +70,5 @@
   <footer class="course-footer">תוכנית לימוד עצמאית מקורית המבוססת על מקורות פתוחים. אין קשר רשמי ל־CMT, MIT, Yale או CFA Institute ואין כאן המלצה אישית להשקעה.</footer>
  </main>
 </div>
-<script src="course-data.js?v=9"></script><script src="course-v9.js?v=9"></script>
+<script src="course-data.js?v=10"></script><script src="course-enrichment.js?v=10"></script><script src="course-v10.js?v=10"></script>
 </body></html>
