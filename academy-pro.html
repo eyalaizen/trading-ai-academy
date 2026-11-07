@@ -1,1 +1,64 @@
-<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EA Academy | מחקר ולמידה</title><link rel="stylesheet" href="academy-pro.css"></head><body><header><a class="brand" href="index.html">EA <b>Academy</b></a><div><strong>מרכז הלמידה המקצועי</strong><small>קורס מבוסס ראיות · עבודה עם גרף ומחברת</small></div><a class="back" href="index.html">← חזרה למעבדת המסחר</a></header><main><aside class="sidebar"><h2>מסלול למידה</h2><p>6 יחידות עומק מוכנות · 48 שיעורים נוספים בתכנון. לא הסמכה של CMT או CFA.</p><div class="progress"><span id="count">0/6 הושלמו</span><div><i id="bar"></i></div></div><div id="lessons"></div><details><summary>תוכנית המשך — 48 שיעורים</summary><p>הרחבה מתוכננת: מיקרו־מבנה שוק, תנודתיות, שיטות שיטתיות, ניהול סיכונים, כלכלה התנהגותית, מחקר AI, בניית תיק, פרויקט מסכם. שיעורים אלה עדיין לא נכתבו ולכן אינם מסומנים כהושלמו.</p></details></aside><section class="main"><div class="intro"><span class="eyebrow" id="unit">יחידת יסוד</span><h1 id="title"></h1><p>מטרות מדידות · קריאה מעמיקה · מקרה בוחן · משימת חקר · בדיקת ידע</p></div><div class="workspace"><article class="reader"><h2>מטרות למידה</h2><ul id="objectives"></ul><h2>הסבר מקצועי</h2><div id="theory"></div><h2>מקרה בוחן</h2><div class="case" id="case"></div><h2>משימת מחקר על הגרף</h2><p id="task"></p><h2>בדיקת הבנה — תשובה מנומקת</h2><div id="questions"></div><button id="rubric" class="secondary">הצג מחוון הערכה</button><p id="check" hidden></p><h2>מקורות מקצועיים</h2><p class="muted">הקורס נכתב עצמאית בהשראת מתודולוגיות למידה מקצועיות; המקורות אינם שותפים לאתר.</p><div id="sources"></div><button id="complete">סמן שהשלמתי את השיעור</button></article><aside class="practice"><div class="practice-head"><div><strong>מעבדת ניתוח לצד השיעור</strong><small>אפשר לשרטט ולכתוב בלי להחליף מסך</small></div><button id="toggle">הסתר גרף</button></div><iframe id="lab" title="גרף EA Academy" src="index.html?embed=lab" loading="lazy"></iframe><p class="notice">הגרף המקומי משתמש בנתוני הדגמה עד ייבוא CSV. אין סנכרון אוטומטי של הגרף עם התשובות.</p><h2>מחברת מחקר</h2><label>נכס, מקור הנתונים וטווח הזמן<textarea data-field="dataset" placeholder="למשל AAPL, מקור CSV, נתונים יומיים, 2024–2025"></textarea></label><label>השערה וכלל בדיקה<textarea data-field="hypothesis" placeholder="מה אני טוען, ואיזה נתון יפריך את הטענה?"></textarea></label><label>תצפיות ומדידות<textarea data-field="evidence" placeholder="מחירים, תאריכים, נפח, מדדים, דוגמאות נגדיות..."></textarea></label><label>מסקנה, מגבלות וניהול סיכון<textarea data-field="conclusion" placeholder="מה ניתן להסיק? מה עדיין לא ידוע?"></textarea></label><p class="muted" id="save">נשמר מקומית בדפדפן</p><button id="export" class="secondary">ייצא מחברת לקובץ TXT</button></aside></div></section></main><script src="academy-pro-data.js"></script><script src="academy-pro.js"></script></body></html>
+<!doctype html>
+<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090f1e"><title>EA Academy | הקורס המקצועי</title>
+<link rel="stylesheet" href="course-v9.css?v=9"></head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brandlogo"><em>EA</em><small>ACADEMY</small></span><span class="brandwords">בית הספר למסחר והשקעות<small>לומדים לחשוב, למדוד ולחקור</small></span></div>
+  <nav aria-label="ניווט ראשי"><a class="nav-active" href="academy-pro.html">האקדמיה</a><a href="index.html">מעבדת הניתוח ↗</a></nav>
+  <div class="topmeta">מסלול יסודות → מחקר <span>18 שבועות · 54 שיעורים</span></div>
+</header>
+<div class="shell">
+ <aside class="course-nav" aria-label="רשימת שיעורים">
+  <div class="course-nav-head"><span class="overline">EA ACADEMY / COURSE 01</span><h2>המסלול שלך</h2><p>לימוד מובנה מהיסודות ועד מחקר עצמאי. 70% הבנה ו־30% יישום.</p>
+   <div class="progresslabel"><strong id="progressTitle">0 מתוך 54 שיעורים</strong><span id="progressPercent">0%</span></div><div class="progressbar"><span id="progressFill"></span></div>
+   <label class="searchlabel" for="lessonSearch">חיפוש שיעור</label><input id="lessonSearch" type="search" placeholder="לדוגמה: RSI, נרות, סיכון..." autocomplete="off">
+  </div>
+  <div id="weekNav" class="weeknav" role="navigation" aria-label="פרקי לימוד"></div>
+  <div class="footnav">שמירה מקומית בדפדפן בלבד. אין כאן שירות ייעוץ השקעות או הסמכה של CMT.</div>
+ </aside>
+ <main class="lesson-area">
+  <div class="intro">
+   <div class="eyebrow" id="breadcrumb">שבוע 1 · שיעור 1</div>
+   <h1 id="lessonTitle">טוען שיעור...</h1>
+   <div class="lessonmeta"><span id="lessonType"></span><span>45 דקות</span><span>31.5 ד׳ למידה · 13.5 ד׳ יישום</span></div>
+   <div class="intro-actions"><button id="prevLesson" class="ghost">← לשיעור הקודם</button><button id="nextLesson" class="ghost">לשיעור הבא →</button></div>
+  </div>
+  <div class="modebar" role="tablist" aria-label="חלקי השיעור"><button data-tab="learn" role="tab" aria-selected="true" class="active">01 · הסברים ולמידה <span>70%</span></button><button data-tab="practice" role="tab" aria-selected="false">02 · תרגול ומבחן <span>30%</span></button><button data-tab="resources" role="tab" aria-selected="false">03 · מומחים ומקורות</button></div>
+  <div class="two-panel">
+   <article class="reader">
+    <section id="learnPanel" data-panel="learn"><div class="sectionstep">חלק א׳ · בונים הבנה</div><h2>מה נלמד בשיעור?</h2><ol id="objectives" class="objectives"></ol>
+    <div class="timeplan"><strong>חלוקת זמן מומלצת</strong><p>10 ד׳ קריאה · 15 ד׳ הרצאה/מקור מקצועי · 6.5 ד׳ מקרה בוחן · 13.5 ד׳ יישום</p></div>
+    <h2>1. הרעיון המרכזי</h2><p id="coreIdea" class="learning-copy"></p>
+    <h2>2. כך זה עובד בפועל</h2><p id="mechanism" class="learning-copy"></p>
+    <h2>3. דוגמה מחושבת</h2><div id="caseStudy" class="case-study"></div>
+    <h2>4. מה אפשר להסיק — ומה לא?</h2><div id="limitations" class="warning"></div>
+    <div class="checkpoint"><strong>לפני שממשיכים</strong><p>הסבר את הרעיון במילים שלך; איזה נתון חסר כדי להגיע למסקנה על השוק?</p></div>
+    <button id="toPractice" class="primary next">הבנתי — עבור ליישום ומבחן ←</button>
+    </section>
+    <section id="practicePanel" data-panel="practice" hidden><div class="sectionstep">חלק ב׳ · יישום ובדיקת הבנה</div><h2>משימת מחקר מעשית</h2><div id="practiceTask" class="practice-task"></div>
+    <div class="method"><h3>איך מגישים תשובה מקצועית?</h3><ol><li>תאר נתונים ומקור — לא רק תחושה.</li><li>הצג לפחות דוגמה אחת עם מספרים או תצפית שניתן לאמת.</li><li>הסבר מה יתמוך בהשערה וגם מה יפריך אותה.</li><li>סכם מסקנה מוגבלת ואחראית, לא ״אות בטוח״ למסחר.</li></ol></div>
+    <h2>בחינה קצרה עם משוב מיידי</h2><div id="quizArea" class="quiz"></div><div id="quizFeedback" class="feedback" role="status" aria-live="polite"></div>
+    <div class="completion"><button id="markComplete" class="primary">בדוק תנאי השלמה</button><small id="completionHint">להשלמה: תשובה נכונה בבוחן וסיכום קצר במחברת (80 תווים לפחות).</small></div>
+    </section>
+    <section id="resourcesPanel" data-panel="resources" hidden><div class="sectionstep">חלק ג׳ · מקורות והעמקה</div><h2>לקרוא ולצפות בחומר המקורי</h2><p class="source-disclaimer">הקישורים מפנים למוסדות, הרצאות ומחקרים עצמאיים. המרצים אינם מלמדים מטעם EA Academy; לא כל מקור עוסק ישירות בנושא השיעור, וחלקם באנגלית.</p>
+    <div id="sourceCards" class="source-grid"></div>
+    <h2>איך לקרוא מחקר בלי להתרשם רק מהכותרת?</h2><ol><li>מצא מי ערך אותו, מתי ואילו נתונים נכללו.</li><li>זהה מה בדיוק נמדד, ובאילו תקופות ומגבלות.</li><li>בדוק אם המסקנה עוסקת במידע סטטיסטי, בתשואה ברוטו או בתשואה נטו.</li><li>כתוב במחברת מה המחקר <strong>לא</strong> מוכיח.</li></ol>
+    </section>
+   </article>
+   <aside class="study-desk"><div class="desk-head"><div><span class="overline">WORKSPACE</span><h2>שולחן הלמידה שלך</h2></div><button id="toggleLab" class="ghost" aria-expanded="false">הצג גרף</button></div>
+    <p class="desk-desc">אפשר ללמוד, לנתח ולכתוב בו־זמנית. הגרף אינו מחליף את הנתונים ואת המקורות.</p>
+    <div id="labArea" class="lab-area" hidden><iframe title="מעבדת EA Academy — גרף וייבוא CSV" id="labFrame" src="index.html?embed=lab" loading="lazy"></iframe><p class="lab-note">הגרף המקומי משתמש בנתונים סינתטיים, אלא אם ייבאת CSV. בגרף החיצוני עשויה להיות השהיה.</p><a href="index.html" target="_blank" rel="noopener">פתח מעבדה מלאה בלשונית נפרדת ↗</a></div>
+    <h3>מחברת שיעור</h3><p class="savehint" id="saveStatus">הטקסט נשמר מקומית בדפדפן שלך</p>
+    <label for="noteSummary">סיכום במילים שלך</label><textarea id="noteSummary" placeholder="מה הבנתי? הסבר 3–5 משפטים, לא רק הגדרה..."></textarea>
+    <label for="noteData">נתונים, דוגמאות ומקורות</label><textarea id="noteData" placeholder="סימול, טווח זמן, נוסחה, מדידה וקישור למקור..."></textarea>
+    <label for="noteCounter">ראיה נגדית / שאלות פתוחות</label><textarea id="noteCounter" placeholder="מה יכול להפריך את ההשערה? מה צריך לבדוק?"></textarea>
+    <label for="noteConclusion">מסקנה וגבולות המידע</label><textarea id="noteConclusion" placeholder="מה המסקנה הזהירה ומה עדיין אינני יודע?"></textarea>
+    <div class="desk-actions"><button id="exportNotes" class="ghost">ייצא את מחברת השיעור TXT</button></div>
+    <div class="study-note"><strong>עיקרון מנחה:</strong> נתון → שאלה → הסבר → בדיקה → מסקנה. מסחר אמיתי אינו חלק מהתרגול.</div>
+   </aside>
+  </div>
+  <footer class="course-footer">תוכנית לימוד עצמאית מקורית המבוססת על מקורות פתוחים. אין קשר רשמי ל־CMT, MIT, Yale או CFA Institute ואין כאן המלצה אישית להשקעה.</footer>
+ </main>
+</div>
+<script src="course-data.js?v=9"></script><script src="course-v9.js?v=9"></script>
+</body></html>
