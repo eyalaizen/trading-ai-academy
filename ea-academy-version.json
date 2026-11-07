@@ -1,0 +1,20 @@
+{
+  "product": "EA Academy",
+  "version": "11.1",
+  "build": "2026-11-07",
+  "course_lessons": 54,
+  "ai_lessons": 18,
+  "market_lessons": 36,
+  "what_is_included": [
+    "course-v10 research-integrated learning chapters",
+    "course-v11 detailed AI curriculum",
+    "original 54-lesson dataset",
+    "local chart, tools, notebook",
+    "course content and sources"
+  ],
+  "notes": [
+    "This is static content, not a live AI service",
+    "Third-party market feeds may be delayed",
+    "Progress stored in the browser"
+  ]
+}

@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090f1e"><title>EA Academy | קורס המחקר והניתוח — גרסה 10</title>
-<link rel="stylesheet" href="course-v9.css?v=10"><link rel="stylesheet" href="course-v10.css?v=10"></head>
+<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090f1e"><title>EA Academy | קורס מסחר, השקעות ו־AI — גרסה 11.1</title>
+<link rel="stylesheet" href="course-v9.css?v=111"><link rel="stylesheet" href="course-v10.css?v=111"><link rel="stylesheet" href="course-v11.css?v=111"></head>
 <body>
 <header class="topbar">
   <div class="brand"><span class="brandlogo"><em>EA</em><small>ACADEMY</small></span><span class="brandwords">בית הספר למסחר והשקעות<small>לומדים לחשוב, למדוד ולחקור</small></span></div>
   <nav aria-label="ניווט ראשי"><a class="nav-active" href="academy-pro.html">האקדמיה</a><a href="index.html">מעבדת הניתוח ↗</a></nav>
-  <div class="topmeta">מסלול יסודות → מחקר <span>18 שבועות · 54 שיעורים</span></div>
+  <div class="topmeta">מסלול יסודות → מחקר <span>18 שבועות · 54 שיעורים · <strong>גרסה 11.1</strong></span></div>
 </header>
 <div class="shell">
  <aside class="course-nav" aria-label="רשימת שיעורים">
   <div class="course-nav-head"><span class="overline">EA ACADEMY / COURSE 01</span><h2>המסלול שלך</h2><p>לימוד מובנה מהיסודות ועד מחקר עצמאי. 70% הבנה ו־30% יישום.</p>
    <div class="progresslabel"><strong id="progressTitle">0 מתוך 54 שיעורים</strong><span id="progressPercent">0%</span></div><div class="progressbar"><span id="progressFill"></span></div>
-   <label class="searchlabel" for="lessonSearch">חיפוש שיעור</label><input id="lessonSearch" type="search" placeholder="לדוגמה: RSI, נרות, סיכון..." autocomplete="off">
+   <div class="track-actions"><button id="allTrack" class="track-on" type="button">כל 54 השיעורים</button><button id="aiTrack" type="button">מסלול AI · 18</button></div><label class="searchlabel" for="lessonSearch">חיפוש שיעור</label><input id="lessonSearch" type="search" placeholder="לדוגמה: RSI, נרות, סיכון..." autocomplete="off">
   </div>
   <div id="weekNav" class="weeknav" role="navigation" aria-label="פרקי לימוד"></div>
   <div class="footnav">שמירה מקומית בדפדפן בלבד. אין כאן שירות ייעוץ השקעות או הסמכה של CMT.</div>
@@ -34,7 +34,7 @@
       <h2>1. מתחילים מהרעיון — ולמה הוא חשוב?</h2><p id="coreIdea" class="learning-copy"></p>
       <div class="reading-depth"><h3>מעמיקים את ההבנה</h3><p id="contextBridge" class="learning-copy"></p></div>
       <h2>2. המנגנון: מה קורה בפועל?</h2><p id="mechanism" class="learning-copy"></p>
-      <h2>3. מה המומחים והמחקר מוסיפים?</h2>
+      <section id="v11DeepReading" class="deep-learning-block" aria-label="העמקה מקצועית"><div class="deep-ribbon">EA ACADEMY · PRO LESSON</div><div id="v11DeepContent"></div></section><h2>3. מה המומחים והמחקר מוסיפים?</h2>
       <div class="research-inline"><span class="evidence-tag">קריאה ביקורתית</span><p id="expertResearch" class="learning-copy"></p>
        <div class="research-source"><div><small>מקור מרכזי לשיעור</small><a id="expertLink" target="_blank" rel="noopener noreferrer" href="#">טוען מקור...</a><small id="expertSourceKind"></small></div><button id="expandResearch" type="button" class="ghost">כל המקורות והמחקרים ←</button></div>
        <div class="read-question"><strong>שאלת קריאה ממוקדת</strong><p id="sourceFocus"></p></div>
@@ -51,13 +51,13 @@
     <div class="completion"><button id="markComplete" class="primary">בדוק תנאי השלמה</button><small id="completionHint">להשלמה: תשובה נכונה בבוחן וסיכום קצר במחברת (80 תווים לפחות).</small></div>
     </section>
     <section id="resourcesPanel" data-panel="resources" hidden><div class="sectionstep">חלק ג׳ · בחינת המקורות לעומק</div><h2>מה עומד מאחורי ההסבר בשיעור?</h2><div class="research-summary"><strong>השאלה המחקרית של השיעור</strong><p id="researchTabFocus"></p><p id="researchTabBridge"></p></div><h2>הרצאות, מחקרים ומדריכים ממוקדים</h2><p class="source-disclaimer">הקישורים מפנים למוסדות, הרצאות ומחקרים עצמאיים. המרצים אינם מלמדים מטעם EA Academy; לצד כל מקור מוסבר כיצד הוא קשור לשיעור. חלקם נותנים רקע תיאורטי ולא ראיה ישירה, וחלקם באנגלית.</p>
-    <div id="sourceCards" class="source-grid"></div>
+    <div id="v11AISources"></div><div id="sourceCards" class="source-grid"></div>
     <h2>איך ממשיכים ממקור למסקנה עצמאית?</h2><ol><li>מצא מי ערך אותו, מתי ואילו נתונים נכללו.</li><li>זהה מה בדיוק נמדד, ובאילו תקופות ומגבלות.</li><li>בדוק אם המסקנה עוסקת במידע סטטיסטי, בתשואה ברוטו או בתשואה נטו.</li><li>כתוב במחברת מה המחקר <strong>לא</strong> מוכיח.</li></ol>
     </section>
    </article>
    <aside class="study-desk"><div class="desk-head"><div><span class="overline">WORKSPACE</span><h2>שולחן הלמידה שלך</h2></div><button id="toggleLab" class="ghost" aria-expanded="false">הצג גרף</button></div>
     <p class="desk-desc">אפשר ללמוד, לנתח ולכתוב בו־זמנית. הגרף אינו מחליף את הנתונים ואת המקורות.</p>
-    <div id="labArea" class="lab-area" hidden><iframe title="מעבדת EA Academy — גרף וייבוא CSV" id="labFrame" src="index.html?embed=lab" loading="lazy"></iframe><p class="lab-note">הגרף המקומי משתמש בנתונים סינתטיים, אלא אם ייבאת CSV. בגרף החיצוני עשויה להיות השהיה.</p><a href="index.html" target="_blank" rel="noopener">פתח מעבדה מלאה בלשונית נפרדת ↗</a></div>
+    <div id="labArea" class="lab-area" hidden><iframe title="מעבדת EA Academy — גרף וייבוא CSV" id="labFrame" src="index.html?embed=lab&amp;v=111" loading="lazy"></iframe><p class="lab-note">הגרף המקומי משתמש בנתונים סינתטיים, אלא אם ייבאת CSV. בגרף החיצוני עשויה להיות השהיה.</p><a href="index.html" target="_blank" rel="noopener">פתח מעבדה מלאה בלשונית נפרדת ↗</a></div>
     <h3>מחברת שיעור</h3><p class="savehint" id="saveStatus">הטקסט נשמר מקומית בדפדפן שלך</p>
     <label for="noteSummary">סיכום במילים שלך</label><textarea id="noteSummary" placeholder="מה הבנתי? הסבר 3–5 משפטים, לא רק הגדרה..."></textarea>
     <label for="noteData">נתונים, דוגמאות ומקורות</label><textarea id="noteData" placeholder="סימול, טווח זמן, נוסחה, מדידה וקישור למקור..."></textarea>
@@ -70,5 +70,5 @@
   <footer class="course-footer">תוכנית לימוד עצמאית מקורית המבוססת על מקורות פתוחים. אין קשר רשמי ל־CMT, MIT, Yale או CFA Institute ואין כאן המלצה אישית להשקעה.</footer>
  </main>
 </div>
-<script src="course-data.js?v=10"></script><script src="course-enrichment.js?v=10"></script><script src="course-v10.js?v=10"></script>
+<script src="course-data.js?v=111"></script><script src="course-enrichment.js?v=111"></script><script src="course-v11-data.js?v=111"></script><script src="course-v11.js?v=111"></script><script src="course-v10.js?v=111"></script>
 </body></html>

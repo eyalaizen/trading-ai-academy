@@ -45,6 +45,7 @@ function render(){let x=c.lessons[at];$('breadcrumb').textContent=`שבוע ${x.
  $('guidedSteps').replaceChildren(...e.steps.map(t=>node('li',t)));
  $('caseStudy').textContent=x.example;$('limitations').textContent=x.limitation;$('practiceTask').textContent=x.practice;
  $('lessonCheckpoint').textContent=e.focus;
+ if(typeof window.EA_V11_RENDER==='function')window.EA_V11_RENDER(x);
 
  $('prevLesson').disabled=at===0;$('nextLesson').disabled=at===N-1;
  renderSourceCards();renderQuiz();updateNotes();sidebar();setTab('learn');
