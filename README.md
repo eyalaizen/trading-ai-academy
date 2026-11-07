@@ -1,20 +1,20 @@
-EA Academy v5.0 — Layout and market reliability update
-=======================================================
-Install: unzip, upload ALL files into the root of the existing GitHub repository, replacing files with the same names. Commit and wait for GitHub Pages to deploy.
-Preview: https://eyalaizen.github.io/trading-ai-academy/?version=50
+# EA Academy v6.0 — Learning Workspace
 
-Changes:
-- EA Academy wordmark (EA / Academy) and cleaner top navigation.
-- Responsive three-column lab layout; avoids overflowing chart and sidebars.
-- Improved chart size and course/market sidebar proportions.
-- External TradingView chart keeps its symbol selector, but now clearly labels delayed/unverified data and provides a direct TradingView fallback link if the embedded iframe is blocked.
-- Existing lessons, scanner, CSV, simulation, journal and backtesting files are preserved.
+שדרוג לגרסה 5.0 של EA Academy. מתאים ל-GitHub Pages, ללא צורך בשרת.
 
-Important limitations:
-- No authenticated real-time market-data API has been connected. TradingView's embedded widget may show delayed data or be blocked by network/browser conditions.
-- The direct link opens the external TradingView site; it does not grant paid exchange entitlements.
-- Local chart, scanner and backtesting demo data are not live; uploaded CSV is historical.
-- No live AI model is connected.
-- Do not enter secrets or API keys in a public GitHub Pages repository.
+## חדש
+- בלשונית תוכנית לימודים → שיעור → תרגול: סביבת עבודה עם משימה מפורטת, מחברת מחקר אישית, וגרף ניתוח צמוד שנפתח בכפתור.
+- בגרף הצמוד ניתן לשרטט על גרף הדגמה או לייבא CSV, וכן לבחור גרף שוק חיצוני (כפוף לזמינות ולהשהיית הספק).
+- מחברת תרגול עם ארבעה שדות, שמירה אוטומטית מקומית לכל שיעור וייצוא TXT.
+- תרגילים בני שלושה שלבים: תכנון ניסוי, בדיקת נתונים, מסקנה; מחוון הערכה בן 10 נקודות.
+- בלשונית מקורות: שישה מאמרי מחקר ומסגרות אקדמיות בתחום ניתוח טכני, בדיקת אסטרטגיות וביקורת מתודולוגית.
 
-Testing: JavaScript syntax and archive integrity can be checked offline; browser rendering and live third-party feeds need verification in the user's environment.
+## מגבלות חשובות
+- אין נתוני מסחר בזמן אמת מובטחים. הגרף המקומי משתמש בנתונים סינתטיים עד לייבוא CSV. הגרף החיצוני תלוי בספק ועשוי להיות מושהה.
+- מחברת המחקר נשמרת ב-localStorage של הדפדפן הנוכחי בלבד. מומלץ לייצא גיבוי.
+- תרגילים אינם נבדקים אוטומטית; המחוון מיועד להערכה עצמית.
+- מקורות אקדמיים מוצגים להעמקה ביקורתית, לא כאישור לכך שאסטרטגיה מסוימת רווחית.
+- עדיין קיימים שיעורים בתוכנית המקורית שהתוכן העיוני שלהם קצר; העדכון מעמיק בעיקר את התרגול והמחקר.
+
+## התקנה
+חלצו את כל הקבצים והעלו אותם לשורש המאגר ב-GitHub (לא את תיקיית האב). הקבצים החדשים: academy-v6.css ו-academy-v6.js. לאחר Commit, המתינו לפרסום ב-GitHub Pages ורעננו עם ?version=60.
